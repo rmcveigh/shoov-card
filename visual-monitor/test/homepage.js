@@ -38,7 +38,9 @@ describe('Visual monitor testing', function() {
         elem: 'footer',
         exclude: [],
         remove: [],
-        hide: [],
+        hide: [
+          '.issuer-statement'
+        ],
         screenWidth: config.selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
       }, config.resultsCallback)
       .call(done);

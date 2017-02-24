@@ -8,26 +8,40 @@ var shoovWebdrivercss = require('shoov-webdrivercss');
 var capsConfig = {
   'chrome': {
     'browser' : 'Chrome',
-    'browser_version' : '42.0',
+    'browser_version' : '55.0',
     'os' : 'OS X',
-    'os_version' : 'Yosemite',
+    'os_version' : 'Sierra',
+    'resolution' : '1024x768'
+  },
+  'firefox': {
+    'browser' : 'Firefox',
+    'browser_version' : '50.0',
+    'os' : 'OS X',
+    'os_version' : 'Sierra',
     'resolution' : '1024x768'
   },
   'ie11': {
     'browser' : 'IE',
     'browser_version' : '11.0',
     'os' : 'Windows',
-    'os_version' : '7',
+    'os_version' : '10',
     'resolution' : '1024x768'
   },
-  'iphone5': {
+  'edge': {
+    'browser' : 'Edge',
+    'browser_version' : '11.0',
+    'os' : 'Windows',
+    'os_version' : '10',
+    'resolution' : '1024x768'
+  },
+  'iphone6': {
     'browser' : 'Chrome',
     'browser_version' : '42.0',
     'os' : 'OS X',
-    'os_version' : 'Yosemite',
+    'os_version' : 'Sierra',
     'chromeOptions': {
       'mobileEmulation': {
-        'deviceName': 'Apple iPhone 5'
+        'deviceName': 'Apple iPhone 6'
       }
     }
   }
@@ -39,7 +53,7 @@ var caps = selectedCaps ? capsConfig[selectedCaps] : undefined;
 var providerPrefix = process.env.PROVIDER_PREFIX ? process.env.PROVIDER_PREFIX + '-' : '';
 var testName = selectedCaps ? providerPrefix + selectedCaps : providerPrefix + 'default';
 
-var baseUrl = process.env.BASE_URL ? process.env.BASE_URL : 'https://www.card.com/';
+var baseUrl = process.env.BASE_URL ? process.env.BASE_URL : 'https://www.card.com';
 
 var resultsCallback = process.env.DEBUG ? console.log : shoovWebdrivercss.processResults;
 
