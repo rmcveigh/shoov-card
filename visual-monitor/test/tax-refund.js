@@ -16,11 +16,11 @@ describe('Visual monitor testing', function() {
     shoovWebdrivercss.after(done);
   });
 
-  it('should show the main region of the faq page',function(done) {
+  it('should show the main region of a tax refund page',function(done) {
     client
-      .url(config.baseUrl + '/faq?nw=mc&b=bancorp')
-      .webdrivercss(config.testName + '.faq', {
-        name: 'faq',
+      .url(config.baseUrl + '/tax-refund?nw=mc&b=bancorp')
+      .webdrivercss(config.testName + '.tax-refund', {
+        name: 'tax-refund',
         elem: '#main',
         exclude: [],
         remove: [],

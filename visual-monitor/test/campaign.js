@@ -16,12 +16,12 @@ describe('Visual monitor testing', function() {
     shoovWebdrivercss.after(done);
   });
 
-  it('should show the content region of a campaign page',function(done) {
+  it('should show the main region of a campaign page',function(done) {
     client
       .url(config.baseUrl + '/betty-boop?option=15222&nw=mc&b=bancorp')
       .webdrivercss(config.testName + '.faq', {
         name: 'campaign',
-        elem: '#content',
+        elem: '#main',
         exclude: [],
         remove: [
           '.card-gallery-wrapper'

@@ -4,6 +4,8 @@ var shoovWebdrivercss = require('shoov-webdrivercss');
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=chrome mocha
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=ie11 mocha
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=iphone5 mocha
+// PROVIDER_PREFIX=browserstack SELECTED_CAPS=firefox mocha
+// PROVIDER_PREFIX=browserstack SELECTED_CAPS=edge mocha
 
 var capsConfig = {
   'chrome': {
@@ -35,15 +37,9 @@ var capsConfig = {
     'resolution' : '1024x768'
   },
   'iphone6': {
-    'browser' : 'Chrome',
-    'browser_version' : '42.0',
-    'os' : 'OS X',
-    'os_version' : 'Sierra',
-    'chromeOptions': {
-      'mobileEmulation': {
-        'deviceName': 'Apple iPhone 6'
-      }
-    }
+    'browserName': 'iPhone',
+    'platform': 'MAC',
+    'device': 'iPhone 6'
   }
 };
 
