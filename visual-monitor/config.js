@@ -3,7 +3,7 @@ var shoovWebdrivercss = require('shoov-webdrivercss');
 // This can be executed by passing the environment argument like this:
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=chrome mocha
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=ie11 mocha
-// PROVIDER_PREFIX=browserstack SELECTED_CAPS=iphone5 mocha
+// PROVIDER_PREFIX=browserstack SELECTED_CAPS=iphone6 mocha
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=firefox mocha
 // PROVIDER_PREFIX=browserstack SELECTED_CAPS=edge mocha
 
